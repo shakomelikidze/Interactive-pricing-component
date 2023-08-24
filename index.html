@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://cdn.glitch.global/82c90e7b-9272-4d8c-bd87-461d573a2962/favicon-32x32.png?v=1681125315127">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Interactive pricing component</title>
+</head>
+<body>
+  <img class="circle-img" src="https://cdn.glitch.global/82c90e7b-9272-4d8c-bd87-461d573a2962/pattern-circles.svg?v=1681125324633" alt="">
+  <header>
+    <h1 class="header-h1">Simple, traffic-based pricing</h1>
+    <p class="header-p">Sign-up for our 30-day trail. No credit card required.</p>
+  </header>
+  <div class="white-card">
+    <!-- In top class: prie slider, price/month and pageviews -->
+    <div class="top">
+      <h2 class="pageviews-h">1M PAGEVIEWS</h2>
+      <!-- Here is price slider -->
+      <input type="range" class="priceslider" min="10" max="50" step="10" >
+      <div class="price-div">
+        <p class="price-value">$30.00</p>
+        <p class="duration"> / month</p>
+      </div>
+    </div>
+    <!-- In middle class: choose billing month/year -->
+    <div class="middle">
+      <p class="billing-p">Monthly Billing</p>
+      <!-- Here is butto which changes mode: Monthly/Yearly -->
+      <div class="mode-button">
+        <div class="circle"></div>
+      </div>
+
+      <p class="billing-p">Yearly Billing</p>
+      <p class="sale">-25%</p>
+    </div>    
+    <!-- In bottom class: offers -->
+    <div class="bottom">
+      <!-- Here is line div -->
+      <div class="line-div"></div>
+      <!-- Here is offers -->
+      <p class="offer-list"><img src="https://cdn.glitch.global/82c90e7b-9272-4d8c-bd87-461d573a2962/icon-check.svg?v=1681125318724" alt="">
+        Unlimited websites
+      </p>
+      <p class="offer-list"><img src="https://cdn.glitch.global/82c90e7b-9272-4d8c-bd87-461d573a2962/icon-check.svg?v=1681125318724" alt="">
+        100% data ownership 
+      </p><p class="offer-list"><img src="https://cdn.glitch.global/82c90e7b-9272-4d8c-bd87-461d573a2962/icon-check.svg?v=1681125318724" alt="">
+        Email reports
+      </p>
+      <!-- start trial button -->
+      <button class="start-trial-btn">Start my trial</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
