@@ -35,6 +35,14 @@ priceSlider.addEventListener('input', ()=> {
             priceValue.textContent = `$${yearlyPrice-(yearlyPrice*0.25)}.00`;
         }
     } 
+
+    // Change background color of slider
+    let value = priceSlider.value * 25;
+    priceSlider.style.background = `linear-gradient(to right,
+    hsl(174, 77%, 80%) 0%,
+    hsl(174, 77%, 80%) ${value}%,
+    hsl(224, 65%, 95%) 0%,
+    hsl(224, 65%, 95%) 100%)`;
 });
 
 modeButton.addEventListener('click', ()=> {
